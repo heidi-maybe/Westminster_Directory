@@ -86,7 +86,7 @@ with col3:
 if text_box != "":
     data = data.query("Name  == '{}'".format(text_box))
 if regex:
-    data = data["Name"].str.containts(text_box, regex=True)
+    data = data["Name"].str.containts('{}'.format(text_box), regex=True)
 
 
 
